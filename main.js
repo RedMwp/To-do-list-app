@@ -21,8 +21,6 @@ function addToList() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-
-
 function addLi(item,index){
     var img = ''
     var bg = 'none';
@@ -125,5 +123,10 @@ clear.onclick = function(e){
 all.onclick = function(e){
     display(tasks)
     colorBlue(e)
+}
+input.onchange = function(){
+    addToList()
+    display( tasks );
+    input.value=''
 }
 //localStorage.clear();
