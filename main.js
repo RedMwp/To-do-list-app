@@ -13,13 +13,18 @@ var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 function addToList() {
     // adding to list
+    
     var inputs = input.value;
+    if(inputs ===''){
+        alert('The Input Filed Can not be empty')
+    }else{
     var todo = {
         text:inputs,
         state:true,
     }
     tasks.push(todo);
     localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 }
 
 function addLi(item,index){
@@ -87,10 +92,10 @@ function del(){
             tasks.splice(index,1);
             
             localStorage.setItem('tasks', JSON.stringify(tasks))
+            display( tasks )
         }
-        
-         all.style.color="royalblue"
         display( tasks )
+        
     })
     
     

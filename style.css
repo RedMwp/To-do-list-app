@@ -65,6 +65,10 @@ form input[type=button]{
     border-radius:100%;
     color:#fff;
 }
+form input:focus{
+    outline: none;
+    background: none;
+}
 .to-do-container{
     background:hsl(235, 24%, 19%);
     height:370px;
@@ -79,7 +83,7 @@ form input[type=button]{
     width:100%;
     height:70%;
     flex:1;
-    overflow-y:scroll;
+    overflow-y:auto;
     border-bottom:1px solid gray;
 }
 .to-do-container ul li{
@@ -98,12 +102,17 @@ form input[type=button]{
     align-items:center;
     min-height:50px;
 }
-ol li{
+ol li, #clear{
     display:inline-block;
     margin:0px 10px;
     opacity: .7;
-    
+    cursor: pointer;
+    border:1px solid gray;
+    padding: .2em 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
 }
+
 .to-do-container-foot p{
     opacity: .7;
 }
