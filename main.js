@@ -1,4 +1,5 @@
-
+const container = document.querySelector('.container');
+const toDocontainer = document.querySelector('.to-do-container');
 const count = document.getElementById('count');
 const btnAdd = document.getElementById('add');
 const input = document.getElementById('new-to-do')
@@ -8,7 +9,7 @@ const complete = document.getElementById('complete');
 const clear = document.getElementById('clear');
 const all = document.getElementById('all');
 var tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    tasks = tasks.reverse()
+    tasks = tasks.reverse();
 
 function addToList() {
     // adding to list
@@ -38,6 +39,7 @@ function display(lists){
     lists.map(addLi);
     var take = tasks.length;
     count.innerHTML = take;
+    
     
 }
 
@@ -105,6 +107,8 @@ btnAdd.onclick = function(){
 function colorBlue(e){
     e.target.style.color="royalblue"
 }
+
+
 activeTask.onclick = function(e){
     active();
     colorBlue(e);

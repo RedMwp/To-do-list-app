@@ -1,0 +1,16 @@
+{
+    "name":"to do app",
+    "start_name":"todoapp",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"#171717",
+    "theme_color":"#000",
+    "oriantation":"potrait-primary",
+    "icons":[
+        {
+            "src":"images/favicon-35x35.png",
+            "type":"image/png",
+            "sizes":"35x35"
+        }
+        ]
+}
