@@ -8,9 +8,9 @@
     "oriantation":"potrait-primary",
     "icons":[
         {
-            "src":"images/favicon-35x35.png",
+            "src":"/images/favicon-35x35.png",
             "type":"image/png",
-            "sizes":"35x35"
+            "sizes":"75x75"
         }
         ]
 }
