@@ -55,6 +55,7 @@ form input[type=text]{
     border:none;
     background:none;
     padding:0px 1em;
+    color:#fff;
 }
 form input[type=button]{
     width:25px;
@@ -126,5 +127,13 @@ ol li{
 @media (max-width:1050px){
     main,header{
         width:97%;
+    }
+}
+@media (max-width: 450px){
+    .to-do-container-foot li{
+        font-size: 12px;
+    }
+    .to-do-container-foot{
+        font-size: 12px;
     }
 }
